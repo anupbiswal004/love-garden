@@ -210,8 +210,9 @@
   .scene-continue {
     position: absolute;
     bottom: 36px;
-    left: 50%;
-    transform: translateX(-50%);
+    left:auto;
+    right:36px;
+    transform:none;
     z-index: 40;
     background: rgba(0,0,0,0.35);
     border: 1px solid rgba(255,255,255,0.25);
@@ -228,7 +229,7 @@
     animation-delay: 1s;
     transition: transform .3s ease, background .3s ease;
   }
-  .scene-continue:hover { transform: translateX(-50%) translateY(-4px); background: rgba(0,0,0,0.55); }
+  .scene-continue:hover { transform: translateY(-4px); background: rgba(0,0,0,0.55); }
   .scene-continue .arrow { display:inline-block; animation: bob 1.8s ease-in-out infinite; margin-left:6px; }
   @keyframes bob { 0%,100%{ transform: translateY(0);} 50%{ transform: translateY(6px);} }
   @keyframes continueFadeIn { to { opacity: 1; } }
